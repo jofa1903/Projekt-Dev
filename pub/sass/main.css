@@ -1,0 +1,189 @@
+@import url(https://fonts.googleapis.com/css?family=Righteous);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none; }
+
+button, #addCourse, #addWork, #addWebpages, #login_button, #logout_btn {
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: white;
+  font-family: "Montserrat", sans-Serif;
+  font-size: 1em;
+  margin-top: 10px; }
+
+button a, #addCourse a, #addWork a, #addWebpages a, #login_button a, #logout_btn a {
+  color: black; }
+
+button:hover, #addCourse:hover, #addWork:hover, #addWebpages:hover, #login_button:hover, #logout_btn:hover {
+  background-color: #fc7739;
+  transition: 0.2s ease-in;
+  color: white; }
+
+#login_button {
+  margin-top: 0px; }
+
+#logout_btn {
+  margin-top: 10px;
+  padding: 5px; }
+
+.main-nav {
+  font-family: "Montserrat", sans-Serif;
+  background-color: #004d50;
+  color: white;
+  display: flex;
+  padding: 5px;
+  justify-content: space-between; }
+  .main-nav a {
+    font-family: "Montserrat", sans-Serif;
+    color: white;
+    font-size: 1.5em; }
+  .main-nav ul {
+    display: flex; }
+  .main-nav li {
+    margin-right: 250px;
+    margin-top: 10px; }
+
+.logo {
+  margin-left: 50px; }
+
+@media only screen and (max-width: 900px) {
+  .main-nav li {
+    margin-right: 30px;
+    margin-top: 10px; } }
+
+body {
+  background-color: #004d50; }
+
+#first-img {
+  width: 50%;
+  border-radius: 100%;
+  margin-left: 30%; }
+
+.wrapper {
+  margin-top: 5%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center; }
+  .wrapper p {
+    font-family: "Montserrat", sans-Serif;
+    width: 60%;
+    color: white;
+    padding-top: 20px;
+    padding-bottom: 20px; }
+
+.syllabus_link, .webpage_link {
+  color: black;
+  font-family: "Righteous", serif; }
+
+.syllabus_link:hover, .webpage_link:hover {
+  color: #ff5e00;
+  font-size: 1.2em;
+  transition: 0.2s ease-in;
+  font-family: "Righteous", serif; }
+
+.secondary-heading {
+  color: white;
+  text-align: center;
+  font-family: "Righteous", serif;
+  text-shadow: 5px 5px #000000;
+  font-size: 3em; }
+
+.third-heading {
+  color: white;
+  text-align: center;
+  font-family: "Righteous", serif;
+  font-size: 2em;
+  margin-top: 30px; }
+
+.fourth-heading {
+  color: white;
+  text-align: center;
+  font-family: "Righteous", serif;
+  font-size: 1.2em;
+  margin-top: 30px; }
+
+.cv-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr; }
+
+.workNoButton, .courseNoButton, .webpagesNoButton {
+  font-family: "Montserrat", sans-Serif;
+  color: white;
+  text-align: center; }
+
+.page-container h2 {
+  font-family: "Montserrat", sans-Serif;
+  color: white; }
+
+h1 {
+  text-shadow: 5px 5px #000000;
+  font-family: "Righteous", serif;
+  font-size: 3em;
+  color: white; }
+
+fieldset {
+  border-style: none; }
+
+.admin-container {
+  text-align: center;
+  padding-top: 60px; }
+
+#adm {
+  font-family: "Montserrat", sans-Serif;
+  color: white;
+  text-align: center; }
+
+legend {
+  font-family: "Montserrat", sans-Serif;
+  color: white; }
+
+label {
+  font-family: "Montserrat", sans-Serif;
+  color: white;
+  text-decoration: none; }
+
+hr {
+  color: #004d50; }
+
+input {
+  margin: 5px;
+  padding: 5px; }
+
+#courses {
+  font-family: "Montserrat", sans-Serif;
+  color: white;
+  text-decoration: none; }
+
+#work {
+  font-family: "Montserrat", sans-Serif;
+  color: white;
+  text-decoration: none; }
+
+#webpages {
+  font-family: "Montserrat", sans-Serif;
+  color: white;
+  text-decoration: none; }
+
+@media only screen and (max-width: 900px) {
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    margin: auto; }
+  #first-img {
+    width: 50%;
+    border-radius: 100%;
+    margin-left: 0; }
+  .left-side {
+    text-align: center; }
+  .right-side {
+    text-align: center; }
+    .right-side p {
+      width: 100%;
+      padding: 30px; }
+  .cv-container {
+    display: flex;
+    flex-direction: column; } }

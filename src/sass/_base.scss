@@ -1,0 +1,25 @@
+// colors
+$colors: (
+    primary: rgb(0, 77, 80),
+    primary-light: lighten(rgb(0, 77, 80), 50%),
+    text:white
+);
+
+
+// fonts
+$basic-font: 'Montserrat',
+sans-Serif;
+$headings: 'Righteous', serif;
+
+
+// functions
+@function font($font-name){
+    @return map-get($fonts, $font-name)
+};
+
+
+@function color($color-name){
+    @return map-get($colors, $color-name)
+};
+
+

@@ -1,0 +1,198 @@
+body{
+    background-color: color(primary);
+}
+
+#first-img{
+    width:50%;
+    border-radius: 100%;
+    margin-left:30%;
+
+}
+
+.wrapper{
+    margin-top:5%;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+
+    p{
+            font-family: $basic-font;
+            width:60%;
+            color: white;   
+            padding-top:20px;
+            padding-bottom:20px;      
+    }
+}
+
+
+.syllabus_link{
+  color: black;
+  font-family: $headings;
+}
+
+.syllabus_link:hover{
+  color:rgb(255, 94, 0);
+  font-size:1.2em;
+  transition: 0.2s ease-in;
+  font-family: $headings;
+
+}
+
+.webpage_link{
+  @extend .syllabus_link;
+}
+
+
+.secondary-heading{
+    color: white;  
+    text-align: center;
+    font-family: $headings;
+    text-shadow: 5px 5px #000000;
+    font-size: 3em; 
+}
+
+.third-heading{
+  color: white;  
+  text-align: center;
+  font-family: $headings;
+  font-size:2em;
+  margin-top:30px;
+}
+
+.fourth-heading{
+  color: white;  
+  text-align: center;
+  font-family: $headings;
+  font-size:1.2em;
+  margin-top:30px;
+}
+
+.cv-container{
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.workNoButton{
+    font-family: $basic-font;
+    color: white;  
+    text-align: center;
+}
+.courseNoButton{
+    @extend .workNoButton;
+}
+
+.webpagesNoButton{
+    @extend .workNoButton;
+}
+
+.page-container{
+    h2{
+      font-family: $basic-font;
+      color: white;   
+    }
+}
+
+
+
+// nytt
+
+
+
+@import url(https://fonts.googleapis.com/css?family=Righteous);
+
+h1{
+  text-shadow: 5px 5px #000000;
+  font-family: $headings;
+  font-size: 3em; 
+  color: white; 
+}
+
+  // LOGIN
+
+  fieldset{
+    border-style: none;
+  }
+
+
+.admin-container{
+  text-align: center;
+  padding-top:60px;
+}
+
+#adm{
+  font-family: $basic-font;
+  color: white;  
+  text-align: center; 
+}
+
+legend{
+  font-family: $basic-font;
+  color: white; 
+}
+
+label{
+  font-family: $basic-font;
+  color: white; 
+  text-decoration: none;
+}
+
+hr{
+  color: color(primary);
+}
+
+input{
+  margin:5px;
+  padding:5px;
+}
+
+// ADMIN
+#courses{
+  font-family: $basic-font;
+  color: white; 
+  text-decoration: none;
+}
+
+#work{
+  font-family: $basic-font;
+  color: white; 
+  text-decoration: none;
+}
+
+#webpages{
+  font-family: $basic-font;
+  color: white; 
+  text-decoration: none;
+}
+
+
+@media only screen and (max-width: 900px) {
+
+  .wrapper{
+    display:flex;
+    flex-direction: column;
+    margin: auto;
+  }
+  
+#first-img{
+  width:50%;
+  border-radius: 100%;
+  margin-left:0;
+}
+
+  .left-side{
+text-align: center;
+}
+
+.right-side{
+  text-align: center;
+  p{
+    width:100%;
+    padding:30px;
+  }
+}
+.cv-container{
+  display:flex;
+  flex-direction: column;
+}
+
+}

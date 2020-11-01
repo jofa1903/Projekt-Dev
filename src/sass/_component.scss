@@ -1,0 +1,81 @@
+button{
+    padding:10px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: color(text);
+    font-family: $basic-font;
+    font-size: 1em;
+    margin-top:10px;
+}
+
+button a {
+    color:black;
+}
+
+button:hover{
+    background-color: rgb(252, 119, 57);
+    transition: 0.2s ease-in;
+    color:white;
+}
+#addCourse {
+    @extend button;
+  }
+  #addWork {
+    @extend button;
+  }
+  #addWebpages {
+    @extend button;
+  }
+  
+#login_button{
+    @extend button;
+    margin-top:0px;
+  }
+
+  #logout_btn{
+    @extend button;
+    margin-top:10px;
+    padding:5px;
+}
+
+
+.main-nav {
+    font-family: $basic-font;
+    background-color: color(primary);
+    color:rgb(255, 255, 255);
+    display:flex;
+    padding:5px;
+    justify-content: space-between;
+
+    a{
+        font-family: $basic-font;
+        color: white;
+        font-size: 1.5em;
+    }
+    ul{
+        display:flex;
+    }
+    li{
+        margin-right:250px;
+        margin-top:10px;
+
+    }
+}
+
+.logo{
+    margin-left:50px;
+    
+}
+
+@media only screen and (max-width: 900px){
+
+    .main-nav{
+
+        li{
+            margin-right:30px;
+            margin-top:10px;
+    
+        }
+    }
+
+}
